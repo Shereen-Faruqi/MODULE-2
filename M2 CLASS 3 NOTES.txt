@@ -1,0 +1,22 @@
+The node modules folder contains all the relevant packages.
+
+package-lock.json has a list of all the packages and their details (such as their versions and so on)
+
+package.json contains the details of the project folder such as the dependencies (which packages it relies on), its scripts for commands such as start, build, eject, etc., and so on.
+	 - eslintConfig (look into it and the other lists mentioned in the package.json folder.
+
+The react app quite literally gets started from the src folder: [NOTE: all components we create should start with a capital letter]
+
+	-We looked into the contents of the index.js and App.js files.
+		-In App.js: the html tags used in the App() function (which is called the App component in React lingo) will be pretty much the same as HTML, but
+				the slight difference is in some of the attribute names, such as className instead of class.
+
+In the App.js file, we saw that the img tag has src={logo}. This means that the source of this image is stored in a variable called logo. This syntax: {variable}
+is used when for instance the source path of the image is stored in a variable and we don't want to state the path directly in the src attribute.
+
+And in the case of a react project, the logo variable is defined usually in the logo.svg file. We need to import the variable from that svg file otherwise App.js file won't recognize this variable.
+So, before we state {logo} in the src attribute, we do: import logo from './logo.svg';
+
+FOR TODAY'S CLASS:
+
+-We added some additional components into our react app by adding component files into out src folder (refer to newly created input.js file and its reference in the App.js file when we imported the Input component from the input.js file and included it in the header)
